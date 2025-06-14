@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unit Conversions</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <section id="intro">
+            <h2>Smart Unit Converter</h2>
+            <p>This is a smart and traditional unit converter built with HTML, CSS, and JavaScript. 
+            It allows users to either type in natural language commands or use classic conversion buttons.</p>
+        </section>
+
+        <section id="home">
+            <header><b>Unit Conversions</b></header>
+        </section>
+
+        <nav>
+            <a href="#temperature"><button>Temperature</button></a>
+            <a href="#weight"><button>Weight</button></a>
+            <a href="#distance"><button>Distance</button></a>
+            <a href="watson.html"><button>Funfact</button></a>
+        </nav>
+
+        <section id="smart-input">
+            <h3>Smart Conversion Input</h3>
+            <input type="text" id="smartBox" placeholder="e.g. convert 10 km to miles">
+            <button id="smartBtn">convert</button>
+            <div id="smartResult"></div>
+        </section>
+
+        <div id="all-conversion-sections">
+
+            <section id="temperature">
+                <div id="tmp">
+
+                    <figure>
+                        <!--Figure and its caption will come here-->
+                        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="200px"/>
+                        <figcaption>Celsius To Farenheit Conversion</figcaption>
+                    </figure>
+
+                    <article>
+                        <!--This contain speciifc elements for temperature conversion-->
+                        <fieldset>
+                            <legend>Temperature</legend>
+
+                            <!--The fields and buttons for temperature input -->
+
+                            <!--Label for Temperature input-->
+                            <label for="celsius">Celsius</label><br/>
+                            <input type="number" id="celsius"><br/>
+
+                            <!--Conversion Button-->
+                            <button id="temperature">Convert</button><br/>
+
+                            <!--Label for temperature output-->
+                            <input type="number" id="farenhiet"><br/>
+                            <label for="farenhiet">Farenheit</label>
+
+                        </fieldset>
+                    </article>
+                    <aside>
+                        To convert celsius to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsius: (C × 9/5) + 32
+                    </aside>
+                </div>
+
+            </section>
+
+            <section id="weight">
+                <!--Weight conversion section-->
+                <div id="wgt">
+                    <figure>
+                        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png" width="200px"/>
+                        <figcaption>Kilogram to Pound Conversion</figcaption>
+                    </figure>
+
+                    <article>
+                        <!--This contains the specific element for weight conversion-->
+                        <fieldset>
+                            <legend>Weight</legend>
+                            <!--Label For Weight input-->
+                            <label for="kilo">Kilogram</label><br/>
+                            <input type="number" id="kilo"> <br/>
+
+                            <!--The conversion button-->
+                            <button id="weight">Convert</button><br/>
+
+                            <!--Label For Weight Output-->
+                            <input type="number" id="pounds"><br/>
+                            <label for="pounds">Pounds</label>
+                        </fieldset>
+                    </article>
+                    <aside>
+                        To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
+                    </aside>
+                </div>
+            </section>
+
+            <section id="distance">
+                <!--Distance conversion section-->
+                <div id="dst">
+                    <figure>
+                        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png" width="200px"/>
+                        <figcaption>Kilometer to Mile Conversion</figcaption>
+                    </figure>
+
+                    <article>
+                        <!-- This contains the specific elements for distance conversion -->
+                        <fieldset>
+                            <legend>Distance</legend>
+                            <!-- Label for Distance input -->
+                            <label for="km">Kilometers</label> <br/>
+                            <input type="number" id="km"> <br/>
+                            <!-- The conversion button -->
+                            <button id="distance"> Convert </button> <br/>
+                            <!-- Label for Distance output -->
+                            <input type="number" id="miles"> <br/>
+                            <label for="miles">Miles</label>
+                        </fieldset>
+                    </article>
+                    <aside>
+                        To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilometers: km &divide; 1.609
+                    </aside>
+                </div>
+            </section>
+        </div>
+
+        <div id="go-home">
+            <a href="#home">
+                <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+            </a>
+        </div>
+
+        <footer> Part of my learning journey in web development · Created using vanilla JavaScript · © 2025 Thomas T Smart</footer>
+        <script src="script.js"></script>
+    </body>
+</html>
